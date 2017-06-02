@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-Class Asse_Sitemap {
+Class Asse_Admin {
 
     public function __construct() {
         add_action( 'init', array( $this, 'remove_thickbox_on_frontend' ) );
@@ -17,4 +17,4 @@ Class Asse_Sitemap {
 
 }
 
-$asse_sitemap = new Asse_Sitemap();
+$asse_sitemap = new Asse_Admin();
