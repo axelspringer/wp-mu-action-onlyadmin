@@ -1,7 +1,7 @@
 {
-    "name": "muplugin/asse-action-onlyadmin",
+    "name": "axelspringer/wp-mu-action-onlyadmin",
     "type": "wordpress-muplugin",
-    "description": "asse action only admin",
+    "description": "axelspringer action only admin",
     "keywords": [
         "wordpress",
         "muplugin"
@@ -12,9 +12,9 @@
             "homepage": "http://www.axelspringer.de"
         }
     ],
-    "homepage": "https://as-stash.axelspringer.de/projects/WPMUP/repos/asse-action-onlyadmin",
-    "license": "proprietary",
+    "homepage": "https://github.com/axelspringer/asse-action-onlyadmin",
+    "license": "Apache-2.0",
     "extra": {
-        "installer-name": "asse-action-onlyadmin"
+        "installer-name": "wp-mu-action-onlyadmin"
     }
 }

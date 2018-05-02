@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-Class Asse_Admin {
+Class Axelspringer_Admin {
 
     public function __construct() {
         add_action( 'init', array( &$this, 'remove_thickbox_on_frontend' ) );
@@ -11,20 +11,20 @@ Class Asse_Admin {
 
     public function remove_thickbox_on_frontend() {
         if ( ! is_admin() ) {
-            wp_deregister_style('thickbox');
-            wp_deregister_script('thickbox');
+            wp_deregister_style( 'thickbox' );
+            wp_deregister_script( 'thickbox' );
         }
     }
 
-   public function disable_theme_switching() {
+    public function disable_theme_switching() {
         global $submenu;
         $current_user = wp_get_current_user();
         if ( $current_user->ID !== 1 ) {
-          unset( $submenu[ 'themes.php' ][ 5 ] );
-          unset( $submenu[ 'themes.php' ][ 15 ] );
+            unset( $submenu['themes.php'][5] );
+            unset( $submenu['themes.php'][15] );
         }
     }
 
 }
 
-$asse_sitemap = new Asse_Admin();
+$axelspringer_sitemap = new Axelspringer_Admin();
